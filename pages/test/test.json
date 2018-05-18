@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "add-and-substract": "/components/add_subtract/add_subtract",
+    "order-item": "/components/order_item/order_item"
+  }
+}

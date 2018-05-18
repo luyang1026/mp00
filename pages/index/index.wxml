@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper class="swiper-container"
+    autoplay="{{false}}">
+    <block wx:for="{{[1,2,3]}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{'/resources/banner@3x.png'}}" class="slide-image" mode="scaleToFill"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="showcase-wrapper">
+    <view class="showcase">
+      <view class="line" wx:for="{{[[1,2,3],[4,5,6]]}}" wx:key="{{index}}">
+        <view wx:for="{{item}}" wx:key="{{index}}" class="showcase-item">
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='test'>123</view>
+  <view class='test'>123</view>
+  <view class='test'>123</view>
+</view>

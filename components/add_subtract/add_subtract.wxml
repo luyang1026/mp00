@@ -1,0 +1,6 @@
+<!--components/add_subtract/add_subtract.wxml-->
+<view class="add_sub-wrapper">
+  <text class='text' bindtap='substract'>-</text>
+  <input class="input" type="number" maxlength="1" value='{{value}}'></input>
+  <text class='text' bindtap='add'>+</text>
+</view>

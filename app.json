@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/test/test",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/assess/assess",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3CD397",
+    "navigationBarTitleText": "学之鉴",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#7D7E80",
+    "backgroundColor": "#FAFAFA",
+    "selectedColor": "#16CA81",
+    "list": [
+      {
+        "iconPath": "resources/index-1@3x.png",
+        "selectedIconPath": "resources/index-2@3x.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "resources/lishipingjia-1@3x.png",
+        "selectedIconPath": "resources/lishiceping-2@3x.png",
+        "pagePath": "pages/assess/assess",
+        "text": "历史测评"
+      },
+      {
+        "iconPath": "resources/jiahao@3x.png",
+        "selectedIconPath": "resources/jiahao@3x.png",
+        "pagePath": "pages/test/test",
+        "text": ""
+      },
+      {
+        "iconPath": "resources/youhuiquan-1@3x.png",
+        "selectedIconPath": "resources/youhuiquan-2@3x.png",
+        "pagePath": "pages/logs/logs",
+        "text": "优惠券"
+      },
+      {
+        "iconPath": "resources/wode-1@3x.png",
+        "selectedIconPath": "resources/wode-2@3x.png",
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
+  }
+}
