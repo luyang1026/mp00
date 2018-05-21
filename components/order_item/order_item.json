@@ -1,4 +1,6 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "add-and-substract": "/components/add_subtract/add_subtract"
+  }
 }

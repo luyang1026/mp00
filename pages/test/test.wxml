@@ -5,4 +5,11 @@
   <input class="input" type='number' maxlength='2' bindinput='input'></input>
   <text>-</text>
 </view> -->
+<view style='height:40rpx;background:yellow'>
 <add-and-substract bind:input-change="la"></add-and-substract>
+</view>
+<order-item wx:for="{{[1,2]}}" wx:key="{{index}}" type="{{1}}" des="说明：语、数、英、物理、化学、生物学情 分析1次" _id="{{index}}" price="{{120}}" count="{{2}}" status="{{1}}" bind:order-item-check="check"></order-item>
+
+<custom-tabbarbar tabConfig="{{tabConfig}}">
+  <custom-tabbarbar-item></custom-tabbarbar-item>
+</custom-tabbarbar>

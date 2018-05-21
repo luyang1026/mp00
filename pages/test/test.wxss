@@ -1,1 +1,4 @@
 /* pages/test/test.wxss */
+page {
+  background: #F4F3F3;
+}

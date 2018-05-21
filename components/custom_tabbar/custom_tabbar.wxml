@@ -1,0 +1,6 @@
+<!--components/custom_tabbar/custom_tabbar.wxml-->
+<view class='tabbar-wrapper'>
+  <view class='tab-title'>
+    <text wx:for="{{tabConfig}}" wx:key="{{index}}" class="tabbar-item {{_tabArray[index] ? 'active': ''}}" id="{{index}}" bind:tap="choose">{{item.text}}</text>
+  </view>
+</view>

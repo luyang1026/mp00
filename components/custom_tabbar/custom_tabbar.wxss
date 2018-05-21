@@ -1,0 +1,14 @@
+/* components/custom_tabbar/custom_tabbar.wxss */
+.tab-title{
+  background: #fff;
+  height: 81rpx;
+  line-height: 80rpx;
+  display: flex;
+  font-size: 28rpx;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.tabbar-item.active{
+  border-bottom: 1rpx solid #3CD397;
+  color: #3CD397;
+}

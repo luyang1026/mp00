@@ -1,2 +1,37 @@
 <!--components/order_item/order_item.wxml-->
-<text>components/order_item/order_item.wxml</text>
+<wxs src="./order_item.wxs" module="helper"/>
+<template name="item-main">
+  <view class='center'>
+    <view class='title-and-count'>
+      <text class='title'>{{helper.type(type).title}}</text>
+      <view class='count'>
+        <text class='count-text'>数量：</text>
+        <text>{{count}}</text>
+        <!-- <add-and-substract></add-and-substract> -->
+      </view>
+    </view>
+    <view class='des-wrapper' wx:if="{{helper.status(status)==='index'}}">
+      <text class='des'>{{des}}</text>
+    </view> 
+  </view>
+  <view class='right'>
+    <text class='price'>{{price}}元</text>
+    <button class='buy-btn' wx:if="{{helper.status(status)==='index'}}">立即购买</button> 
+  </view>
+</template>
+<template name="item-bottom">
+  <view class='bottom-wrapper {{helper.status(status)}}'>
+    <view class='bottom-des'>{{des}}</view>
+    <view class='comment'></view>
+  </view>
+</template>
+<view class="order-item-wrapper">
+  <view class='main {{helper.status(status)}}'>
+    <view class='item-picker' bind:tap="check">
+      <image class="item-pick-img" src='{{helper.pickerImg(checked)}}'></image>
+    </view>
+    <image class="img" src='{{helper.type(type).icon}}'></image>
+    <template is="item-main" data="{{type,des,price,status,count}}"/>
+  </view>
+  <template is="item-bottom" data="{{des,status}}"/>
+</view>

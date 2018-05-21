@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    tabConfig: [
+      {text: '可用'},
+      {text: '不可用'}
+    ]
   },
 
   /**
@@ -65,5 +68,8 @@ Page({
   },
   la(e){
     // console.log(e.detail)
+  },
+  check(e){
+    console.log(e.detail)
   }
 })

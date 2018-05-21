@@ -1,0 +1,46 @@
+var type = function (index) {
+  switch (index) {
+    case 0:
+      return {
+        icon: '/resources/xueqingfenxijuan@3x.png',
+        title: '学情分析卷'
+      }
+    case 1:
+      return {
+        icon: '/resources/xinyonghutiyanjuan@3x.png',
+        title: '新用户体验卷'
+      }
+    case 2:
+      return {
+        icon: '/resources/VIPbaoyuejuan@3x.png',
+        title: 'vip包月卷'
+      }
+    case 3:
+      return {
+        icon: '/resources/VIPbaonianjuan@3x.png',
+        title: 'vip包月卷'
+      }
+    default:
+      console.error('property index not found in order_item component')
+  }
+}
+var status = function(status) {
+  switch (status) {
+    case 0:
+      return 'index'
+    case 1: 
+      return 'unfinished'
+    case 2:
+      return 'finished'
+    default:
+      console.error('property status not found in order_item component')
+  }
+}
+var pickerImg = function(checked){
+  return checked ? '/resources/index-2@3x.png' : '/resources/index-1@3x.png'
+}
+module.exports = {
+  type: type,
+  status: status,
+  pickerImg: pickerImg
+}

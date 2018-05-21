@@ -1,26 +1,26 @@
 /* components/add_subtract/add_subtract.wxss */
 .add_sub-wrapper{
   display: flex;
-  height: 31rpx;
-  line-height: 31rpx;
   font-size: 20rpx;
-  /* overflow: hidden; */
+  height: 100%;
 }
 .input{
   width: 44rpx;
   border: 1px solid #999;
   margin: 0 6rpx;
-  height:31rpx;
-  min-height: 31rpx;
   box-sizing: border-box;
   text-align: center;
+  display: flex;
+  align-items: center; 
+  height: 100%; 
+  min-height: 30rpx; 
 }
 .text{
   width: 22rpx;
-  height: 31rpx;
   border: 1px solid #999;
   box-sizing: border-box;
   background-color: #F1F1F1;
-  text-align: center;
-  line-height: 27rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

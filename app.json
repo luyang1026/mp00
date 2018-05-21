@@ -10,7 +10,8 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#3CD397",
     "navigationBarTitleText": "学之鉴",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "red"
   },
   "tabBar": {
     "color": "#7D7E80",
