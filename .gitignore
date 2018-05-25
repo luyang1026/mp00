@@ -1,0 +1,5 @@
+dist/
+.idea/
+.gradle/
+build/
+/node_modules
